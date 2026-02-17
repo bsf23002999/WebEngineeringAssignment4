@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebEngineeringAssignment#4</title>
+    <style>
+        .button-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 150px);
+            gap: 15px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+        .button-grid button {
+            padding: 15px;
+            border: solid 2px #000000;
+            border-radius: 8px;
+            color: #000000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s ease, background-color 0.3s ease;
+        }
+        .button-grid button:hover {
+            background-color: #000000;
+            color: #f2f2f2;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body style="background-color: #f2f2f2;">
+    <div class="main" style="text-align: center; font-family: Arial, sans-serif; letter-spacing: 2px; border: solid 2px #000000; width: 500px; display:block; margin: 0 auto;">
+        <h4>ASSIGNMENT # 4</h4>
+        <h5>BY</h5>
+        <h3>RAYYAN AHMAD</h3>
+    </div>
+<a id="imageLink" href="https://cleanativeltd.com/" target="_blank">
+    <img id="myImage"
+         src="CleanativeLtd.svg"
+         style="width:500px; display:block; margin: 0 auto;">
+</a>
+<div class="button-grid">   
+    <button onclick="document.getElementById('myImage').src='AquaBlush1L.svg'; document.getElementById('imageLink').href='https://cleanativeltd.com/product/aquablush-liquid-detergent-900ml/'">AquaBlush1L</button>
+    <button onclick="document.getElementById('myImage').src='AquaBlush5L.svg'; document.getElementById('imageLink').href='https://cleanativeltd.com/product/aquablush-liquid-detergent-5l/'">AquaBlush5L</button>
+    <button onclick="document.getElementById('myImage').src='Mist500ML.svg'; document.getElementById('imageLink').href='https://cleanativeltd.com/product/mist-dishwashing-liquid-500ml/'">Mist500ML</button>
+    <button onclick="document.getElementById('myImage').src='Mist5L.svg'; document.getElementById('imageLink').href='https://cleanativeltd.com/product/mist-dishwashing-liquid-5l/'">Mist5L</button>
+    <button onclick="document.getElementById('myImage').src='Strawbee500ML.svg'; document.getElementById('imageLink').href='https://cleanativeltd.com/product/strawbee-handwash-500ml/'">Strawbee500ML</button>
+    <button onclick="document.getElementById('myImage').src='Shift5L.svg'; document.getElementById('imageLink').href='https://cleanativeltd.com/product/shift-car-wash-shampoo-5l/'">Shift5L</button>
+    <button onclick="document.getElementById('myImage').src='Ouster.svg'; document.getElementById('imageLink').href='https://cleanativeltd.com/product/ouster-toilet-cleaner-500ml/'">Ouster</button>
+    <button onclick="document.getElementById('myImage').src='TheSwiper.svg'; document.getElementById('imageLink').href='https://cleanativeltd.com/product/swiper-perfumed-phenyl-floor-cleaner-2-9l/'">TheSwiper</button>
+</div>
+</body>
+</html>
