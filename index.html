@@ -1,43 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebEngineeringAssignment#4</title>
-    <style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WebEngineeringAssignment#4</title>
+<style>
+    body {
+        background-color: #f2f2f2;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .main {
+        text-align: center;
+        letter-spacing: 2px;
+        max-width: 90%;
+        margin: 20px auto;
+    }
+    #myImage {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+    }
+    .button-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 15px;
+        max-width: 700px;
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+    .button-grid button {
+        padding: 15px;
+        border: solid 2px #000000;
+        border-radius: 8px;
+        background-color: transparent;
+        color: #000000;
+        font-weight: bold;
+        cursor: pointer;
+        transition: transform 0.2s ease, background-color 0.3s ease;
+    }
+    .button-grid button:hover {
+        background-color: #000000;
+        color: #f2f2f2;
+        transform: scale(1.05);
+    }
+    @media (max-width: 480px) {
         .button-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 150px);
-            gap: 15px;
-            justify-content: center;
-            margin-top: 30px;
+            grid-template-columns: repeat(2, 1fr);
         }
         .button-grid button {
-            padding: 15px;
-            border: solid 2px #000000;
-            border-radius: 8px;
-            color: #000000;
-            font-weight: bold;
-            cursor: pointer;
-            transition: transform 0.2s ease, background-color 0.3s ease;
+            padding: 12px;
+            font-size: 14px;
         }
-        .button-grid button:hover {
-            background-color: #000000;
-            color: #f2f2f2;
-            transform: scale(1.05);
-        }
-    </style>
+    }
+</style>
 </head>
-<body style="background-color: #f2f2f2;">
-    <div class="main" style="text-align: center; font-family: Arial, sans-serif; letter-spacing: 2px; width: 500px; display:block; margin: 0 auto;">
-        <h4>ASSIGNMENT # 4</h4>
-        <h5>BY</h5>
-        <h3>RAYYAN AHMAD</h3>
-    </div>
+<body>
+<div class="main">
+    <h4>ASSIGNMENT # 4</h4>
+    <h5>BY</h5>
+    <h3>RAYYAN AHMAD</h3>
+</div>
 <a id="imageLink" href="https://cleanativeltd.com/" target="_blank">
-    <img id="myImage"
-         src="CleanativeLtd.svg"
-         style="width:500px; display:block; margin: 0 auto;">
+    <img id="myImage" src="CleanativeLtd.svg">
 </a>
 <div class="button-grid">   
     <button onclick="document.getElementById('myImage').src='AquaBlush1L.svg'; document.getElementById('imageLink').href='https://cleanativeltd.com/product/aquablush-liquid-detergent-900ml/'">AquaBlush1L</button>
@@ -50,5 +77,4 @@
     <button onclick="document.getElementById('myImage').src='TheSwiper.svg'; document.getElementById('imageLink').href='https://cleanativeltd.com/product/swiper-perfumed-phenyl-floor-cleaner-2-9l/'">TheSwiper</button>
 </div>
 </body>
-
 </html>
